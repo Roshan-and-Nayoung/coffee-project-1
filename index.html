@@ -3,32 +3,95 @@
 <head>
     <meta charset="UTF-8">
     <title></title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+          integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
-    <h1>Coffee!</h1>
+<h1 class="text-center">Coffee!</h1>
+<hr class='w-75'>
 
-    <form>
-        <label for="roast-selection"></label>
-        <select id="roast-selection">
-            <option>light</option>
-            <option>medium</option>
-            <option>dark</option>
-        </select>
-        <input id="submit" type="submit" />
-    </form>
+<div class="container row d-flex justify-content-around m-auto">
 
-    <table>
-        <thead>
-            <tr>
-                <th>ID</th>
-                <th>NAME</th>
-                <th>ROAST</th>
-            </tr>
-        </thead>
-        <tbody id="coffees"></tbody>
-    </table>
+            <div class="row col-6" id="coffees"></div>
+        <!--            drop-down menus for  coffee first order-->
+        <div class="col-6">
+            <div>
+                <form>
+                    <div class="form-group">
+                        <label class="font-weight-bold" for="roast-selection">Roast</label>
+                        <select id="roast-selection" class="form-control">
+                            <option value="all">all</option>
+                            <option value="light">light</option>
+                            <option value="medium">medium</option>
+                            <option value="dark">dark</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label class="font-weight-bold" for="coffee-search">Coffee Name</label>
+                        <input type="search" id="coffee-search" title="Coffee Name" class="form-control">
+                    </div>
+                    <button type="submit" id="submit" class="btn btn-block btn-primary">Submit</button>
 
-    <script src="main.js"></script>
+                </form>
+            </div>
+
+            <!--       end drop-down for first menu/ start drop-down menu  for coffee second order-->
+
+            <div class="add-coffee mt-5">
+                <h2 class="text-center">Add a Coffee</h2>
+                <form>
+                    <div class="form-group">
+                        <label class="font-weight-bold" for="roast-selection-add-coffee">Roast</label>
+                        <select id="roast-selection-add-coffee" class="form-control">
+                            <option value="all">all</option>
+                            <option>light</option>
+                            <option>medium</option>
+                            <option>dark</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label class="font-weight-bold" for="coffee-search">Coffee Name</label>
+                        <input type="search" id="coffee-search-add-coffee" class="form-control">
+                    </div>
+                    <button type="submit" id="submit-add-coffee" class="btn btn-block btn-primary">Submit</button>
+
+                </form>
+            </div>
+
+            <!--          end  drop-down menu  for coffee second order-->
+
+        </div>
+
+    </div>
+</div>
+
+
+<!--<form>-->
+<!--    <input type="search" id="coffee-search" title="Coffee Name">-->
+<!--    <label for="roast-selection"></label>-->
+<!--    <select id="roast-selection">-->
+<!--        <option value="all">all</option>-->
+<!--        <option value="light">light</option>-->
+<!--        <option value="medium">medium</option>-->
+<!--        <option value="dark">dark</option>-->
+<!--    </select>-->
+<!--    <input id="submit" type="submit"/>-->
+<!--</form>-->
+
+
+<!--<div id="coffees"></div>-->
+
+<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+        integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+        crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+        crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+        integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+        crossorigin="anonymous"></script>
+<script src="main.js"></script>
 </body>
 </html>
