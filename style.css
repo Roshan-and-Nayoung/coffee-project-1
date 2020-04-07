@@ -1,9 +1,12 @@
-*{
-box-sizing: border-box;
+/**{*/
+/*box-sizing: border-box;*/
 
+/*}*/
+
+
+.coffee-list-container{
+    height: 150px;
 }
-
-
 .h3{
     color: black
 }
