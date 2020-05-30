@@ -13,74 +13,58 @@
 <hr class='w-75'>
 
 <div class="coffee-list-container container m-auto d-flex ">
-            <div class="row col-6" id="coffees"></div>
-        <!--            drop-down menus for  coffee first order-->
-        <div class="col-6">
-            <div>
-                <form>
-                    <div class="form-group">
-                        <label class="font-weight-bold" for="roast-selection">Roast</label>
-                        <select id="roast-selection" class="form-control">
-                            <option value="all">all</option>
-                            <option value="light">light</option>
-                            <option value="medium">medium</option>
-                            <option value="dark">dark</option>
-                        </select>
-                    </div>
-                    <div class="form-group">
-                        <label class="font-weight-bold" for="coffee-search">Coffee Name</label>
-                        <input type="search" id="coffee-search" title="Coffee Name" class="form-control">
-                    </div>
-                    <button type="submit" id="submit" class="btn btn-block btn-primary">Submit</button>
+    <div class="row col-6" id="coffees"></div>
+    <!--            drop-down menus for  coffee first order-->
+    <div class="col-6">
+        <div>
+            <form>
+                <div class="form-group">
+                    <label class="font-weight-bold" for="roast-selection">Roast</label>
+                    <select id="roast-selection" class="form-control">
+                        <option value="all">all</option>
+                        <option value="light">light</option>
+                        <option value="medium">medium</option>
+                        <option value="dark">dark</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label class="font-weight-bold" for="coffee-search">Coffee Name</label>
+                    <input type="search" id="coffee-search" title="Coffee Name" class="form-control">
+                </div>
+                <button type="submit" id="submit" class="btn btn-block btn-primary">Submit</button>
 
-                </form>
-            </div>
-
-            <!--       end drop-down for first menu/ start drop-down menu  for coffee second order-->
-
-            <div class="add-coffee mt-5">
-                <h2 class="text-center">Add a Coffee</h2>
-                <form>
-                    <div class="form-group">
-                        <label class="font-weight-bold" for="roast-selection-add-coffee">Roast</label>
-                        <select id="roast-selection-add-coffee" class="form-control">
-                            <option value="all">all</option>
-                            <option>light</option>
-                            <option>medium</option>
-                            <option>dark</option>
-                        </select>
-                    </div>
-                    <div class="form-group">
-                        <label class="font-weight-bold" for="coffee-search">Coffee Name</label>
-                        <input type="search" id="coffee-search-add-coffee" class="form-control">
-                    </div>
-                    <button type="submit" id="submit-add-coffee" class="btn btn-block btn-primary">Submit</button>
-
-                </form>
-            </div>
-
-            <!--          end  drop-down menu  for coffee second order-->
-
+            </form>
         </div>
 
+        <!--       end drop-down for first menu/ start drop-down menu  for coffee second order-->
+
+        <div class="add-coffee mt-5">
+            <h2 class="text-center">Add a Coffee</h2>
+            <form>
+                <div class="form-group">
+                    <label class="font-weight-bold" for="roast-selection-add-coffee">Roast</label>
+                    <select id="roast-selection-add-coffee" class="form-control">
+                        <option value="all">all</option>
+                        <option>light</option>
+                        <option>medium</option>
+                        <option>dark</option>
+                    </select>
+                </div>
+            </form>
+
+            <form id="add-coffee">
+                <label class="font-weight-bold" for="coffee-search">Coffee Name</label>
+                <input type="text" id="coffee-search-add-coffee" class="form-control" required/>
+                <button type="submit" id="submit-add-coffee" class="btn btn-block btn-primary mt-3">Submit</button>
+            </form>
+        </div>
+        </form>
     </div>
+    <!--          end  drop-down menu  for coffee second order-->
+</div>
+</div>
 </div>
 
-
-<!--<form>-->
-<!--    <input type="search" id="coffee-search" title="Coffee Name">-->
-<!--    <label for="roast-selection"></label>-->
-<!--    <select id="roast-selection">-->
-<!--        <option value="all">all</option>-->
-<!--        <option value="light">light</option>-->
-<!--        <option value="medium">medium</option>-->
-<!--        <option value="dark">dark</option>-->
-<!--    </select>-->
-<!--    <input id="submit" type="submit"/>-->
-<!--</form>-->
-
-
-<!--<div id="coffees"></div>-->
 
 <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
         integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
