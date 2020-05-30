@@ -60,7 +60,7 @@ function updateCoffees(e) {
 
 // function to add new coffee
 function addCoffee(f) {
-    // f.preventDefault(); // don't submit the form, we just want to update the data
+    f.preventDefault(); // don't submit the form, we just want to update the data
     let addCoffeeName = document.querySelector('#coffee-search-add-coffee').value;
     if (addCoffeeName === '' || addCoffeeName === null || addCoffeeName ===undefined) {
         alert ('Please enter a coffee name!')
